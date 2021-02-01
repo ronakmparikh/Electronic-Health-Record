@@ -1,0 +1,104 @@
+﻿<%@ Master Language="VB" CodeFile="Admine.master.vb" Inherits="Admine" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .style1
+        {
+            height: 4px;
+            width: 428px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table align="center">
+    <tr>
+    <td>
+               <asp:Image ID="Image2" runat="server" Height="204px" 
+                   ImageUrl="~/icon/logo.jpg" Width="212px" />
+               </td>
+               <td>
+       <asp:Panel ID="Header_panel" runat="server" BackColor="#FF8000" 
+            ForeColor="White" Height="205px"
+            Width="1108px">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+            <span><font size="20">  <CENTER> 
+    <asp:Label ID="Label5" runat="server" 
+                BorderStyle="None" Font-Bold="True" Font-Italic="False" Height="39px" 
+                Text="SHRUSTI_ SEVA" Width="632px"></asp:Label></font></span></CENTER>
+            <br />
+            <br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp;&nbsp;<br />
+               <MARQUEE BEHAVIOR="SCROLL" DIRECTION="LEFT" ALIGN="MIDDLE" BGCOLOR=#ff8000 SCROLLAMOUNT="10" ><FONT SIZE="06"><asp:Label ID="Label2" runat="server" Text="Best Friend For Healthy Life"></asp:Label><br /></marquee>
+               <br />
+               <MARQUEE BEHAVIOR="SCROLL" DIRECTION="RIGHT" ALIGN="MIDDLE" BGCOLOR=#ff8000 SCROLLAMOUNT="10" ><FONT SIZE="06"> <asp:Label ID="Label1" runat="server" Text="Electronic Health Record"></asp:Label><br /></marquee>
+            </center>
+            </span></asp:Panel></td>
+            </tr>
+            </table>
+        <p align="right">
+            <asp:LinkButton ID="lkchangepassowd" runat="server" Visible="False">Change Password</asp:LinkButton> &nbsp;&nbsp;<asp:LinkButton 
+                ID="lbllogout" runat="server">Log Out</asp:LinkButton></p>
+              </br>
+       <table align="center" border="0"  cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">           
+            <tr>
+               
+                <td style="width: 200px; height: 15px; background-color: #009900;" align ="center"   valign="top">
+                    <div id='cssmenu'>
+<ul>
+    
+   <li><a href="Member_Page.aspx"><span>Home</span></a></li>
+   <li><a href='#'><span>About Us</span></a></li>
+   <li><li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Contac us.aspx">Contact Us</asp:HyperLink></li></li>
+   <li><a href="Member Page_detail/view personal_detail.aspx"><span>Profile</span></a></li>
+   <li><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Individual Provider/Priscription.aspx">Priscription</asp:HyperLink></li>
+   <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Individual Provider/Search Hospital.aspx">Search Hospital</asp:HyperLink></li>
+   <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Individual Provider/Search Patient.aspx">Search Patient</asp:HyperLink></li>
+   <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Individual Provider/Doctor_Inbox.aspx">Inbox</asp:HyperLink></li>
+   <li class='last'><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Individual Provider/Doctor_Feedback.aspx">Feedback</asp:HyperLink></li>
+  
+</ul>
+</div>
+                    </td>
+                   
+                <td class="style1">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                 </asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <center>
+ <asp:Panel ID="Panel5" runat="server" BackColor="Green" Width="1318px">
+            <br />
+               <center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Large" 
+                ForeColor="White">About us</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="Large" 
+                ForeColor="White">Career</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="Large" 
+                ForeColor="White">Contact
+            </asp:HyperLink></center>
+            
+            <br />
+        </asp:Panel>
+ </center> 
+    </div>   
+    </form>
+</body>
+</html>
+

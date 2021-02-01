@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+   
+  <siteMapNode url="~/Individual Provider/doctor_page.aspx" title="Home"  description="">
+        <siteMapNode url="~/Individual Provider/Priscription.aspx" title="Priscription"  description="" />
+        <siteMapNode url="~/Individual Provider/Doctor_Inbox.aspx" title="Inbox"  description="" />
+        <siteMapNode url="~/Individual Provider/Doctor_Feedback.aspx" title="Feedback"  description="" />
+        <siteMapNode url="~/Individual Provider/Doctor_Profile.aspx" title="Profile"  description="" />
+        <siteMapNode url="~/Individual Provider/Search Hospital.aspx" title="Search Hospital"  description="" />
+        <siteMapNode url="~/Individual Provider/Search Patient.aspx" title="Search Patient"  description="" />
+    </siteMapNode>
+
+
+    
+</siteMap>
+  
+
+
+  
+

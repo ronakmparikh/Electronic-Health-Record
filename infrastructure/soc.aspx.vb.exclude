@@ -1,0 +1,64 @@
+Imports System.Data.SqlClient
+
+Partial Class _Default
+    Inherits System.Web.UI.Page
+
+    Protected Sub Btnsubmit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Btnsubmit.Click
+
+        Dim sts As String
+        Dim con As New Connection()
+        con.Connection()
+        con.coni.Open()
+        Session("provide_org_user_id") = 10
+        Dim cmd As New SqlCommand("addsoc", con.coni)
+        cmd.CommandType = Data.CommandType.StoredProcedure
+        cmd.Parameters.AddWithValue("@hospital_id", Session("provide_org_user_id"))
+        cmd.Parameters.AddWithValue("@Consultation_Type", ddlConsultation_Type.SelectedValue)
+        cmd.Parameters.AddWithValue("@Type_of_Accomodation", ddlType_of_Accomodation.SelectedValue)
+        cmd.Parameters.AddWithValue("@Medical", ddlMedical.SelectedValue)
+        cmd.Parameters.AddWithValue("@Paramedical", ddlParamedical.SelectedValue)
+        cmd.Parameters.AddWithValue("@Surgery_Charges", ddlSurgery_Charges.SelectedValue)
+        cmd.Parameters.AddWithValue("@cost", TxtCost.Text)
+        cmd.Parameters.AddWithValue("@Name_of_Package", TxtName_of_Package.Text)
+        cmd.Parameters.AddWithValue("@Coverage", txtCoverage.Text)
+        cmd.Parameters.AddWithValue("@Treatment", ddlTreatment.SelectedValue)
+
+
+        Try
+            sts = cmd.ExecuteNonQuery()
+            MsgBox("Record inserted")
+
+            ddlConsultation_Type.SelectedValue = "Select "
+            ddlType_of_Accomodation.SelectedValue = "Select "
+            ddlMedical.SelectedValue = "Select "
+            ddlParamedical.SelectedValue = "Select "
+            ddlSurgery_Charges.SelectedValue = "Select "
+            TxtCost.Text = " "
+            TxtName_of_Package.Text = " "
+            txtCoverage.Text = " "
+            ddlTreatment.SelectedValue = "Select "
+
+        Catch ex As Exception
+            MsgBox("Record not inserted")
+        End Try
+
+        con.coni.Close()
+
+
+        'If sts >= 0 Then
+        'Page.ClientScript.RegisterStartupScript(Page.GetType(), DateTime.Now.ToFileTime().ToString(), "alert('Record Is Inserted successfully');", True)
+        'MsgBox("Record is inserted", MsgBoxStyle.OkOnly, "Confirmation")
+        'Response.Redirect("casedetail1.aspx")
+        'Else
+        'Page.ClientScript.RegisterStartupScript(Page.GetType(), DateTime.Now.ToFileTime().ToString(), "alert('Record Is Not Inserted');", True)
+        'Response.Redirect("casedetail1.aspx")
+        'End If
+
+
+
+    End Sub
+
+    Protected Sub TxtCost_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles TxtCost.TextChanged
+
+    End Sub
+End Class

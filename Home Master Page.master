@@ -1,0 +1,310 @@
+﻿<%@ Master Language="VB" CodeFile="Home Master Page.master.vb" Inherits="Home_Master_Page" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link title="Template Style Sheet" rel="stylesheet" href="templete.css" type="text/css">
+   <link rel="stylesheet" href="CSS3 Menu_files/css3menu1/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+
+    <style type="text/css">
+        .style2
+        {
+            width: 749px;
+            text-align: left;
+        }
+        
+p
+{
+background-color:#FF8000;
+padding-left:200px;
+}
+        .style3
+        {
+            width: 39px;
+        }
+        .style4
+        {
+            width: 190px;
+        }
+        .style5
+        {
+            width: 80px;
+        }
+        .style6
+        {
+            height: 40px;
+        }
+        .style7
+        {
+            width: 80px;
+            height: 26px;
+        }
+        .style8
+        {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div>
+    <div style="height: 194px; width: 1241px;">
+     <table align="center" style="height: 182px; width: 1200px;">
+    <tr>
+    <td>
+               <asp:Image ID="Image2" runat="server" Height="193px" 
+                   ImageUrl="~/icon/logo.jpg" Width="210px" />
+               </td>
+               <td>
+       <asp:Panel ID="Panel1" runat="server" BackColor="#FF8000" 
+            ForeColor="White" Height="183px"
+            Width="1108px">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+            <span><font size="20">  <CENTER> 
+    <asp:Label ID="Label1" runat="server" 
+                BorderStyle="None" Font-Bold="True" Font-Italic="False" Height="39px" 
+                Text="SHRUSTI_SEVA" Width="632px"></asp:Label></font></span></CENTER>
+            <br />
+            <br />
+            <br />
+               <MARQUEE BEHAVIOR="SCROLL" DIRECTION="LEFT" ALIGN="MIDDLE" BGCOLOR=#ff8000 SCROLLAMOUNT="10" ><FONT SIZE="06"> <asp:Label ID="Label3" runat="server" Text="Best Friend For Healthy Life"></asp:Label><br /></marquee>
+     <br />
+     <input type="checkbox" id="css3menu-switcher" class="c3m-switch-input">
+<ul id="css3menu1" class="topmenu">
+	<li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
+	<li class="topfirst"><a href="#" style="height:15px;line-height:15px;">About us</a></li>
+	<li class="topmenu"><a href="#" style="height:15px;line-height:15px;"><span>Career</span></a>
+	<ul>
+		<li class="subfirst"><a href="#">Item 1 0</a></li>
+		<li><a href="#">Item 1 1</a></li>
+		<li><a href="#">Item 1 2</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:15px;line-height:15px;">Contact us</a></li>
+	<li class="toplast"><a href="#" style="height:15px;line-height:15px;">About us</a></li>
+</ul><p class="_css3m"><a href="http://css3menu.com/">html dropdown menu</a> by Css3Menu.com</p>
+            </span></asp:Panel></td>
+            </tr>
+            </table>
+    <br />
+        </div>
+        <br />
+        
+        <table border="0" style="width: 1320px; height: auto;" >
+        <tr>
+        <td class="style4" nowrap="nowrap" >
+        <br />
+            <asp:Panel ID="left_Panel" runat="server" Height="539px" Width="248px" 
+                BackColor="Silver">
+                <asp:Panel ID="faciltyofpanel" runat="server" BackColor="Green" Font-Bold="True" 
+                    Height="28px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    <asp:Label ID="lblfacility" runat="server" Font-Size="X-Large" 
+                        ForeColor="White" Text="Facility"></asp:Label>
+                </asp:Panel>
+                <asp:Panel ID="facility_club_panel" runat="server" Height="174px" 
+                    BorderStyle="Double" BorderWidth="2px" BackColor="White">
+                    &nbsp;<table style="width:100%;">
+                        <tr>
+                            <td align="center">
+                                <asp:LinkButton ID="LinkButton9" runat="server" CausesValidation="False" 
+                                    PostBackUrl="~/Club/Survey.aspx">Survey</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <asp:LinkButton ID="LinkButton10" runat="server" CausesValidation="False" 
+                                    PostBackUrl="~/Club/Diabetes Club.aspx">Diabetes Club</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <asp:LinkButton ID="LinkButton11" runat="server" CausesValidation="False" 
+                                    PostBackUrl="~/Club/Hypertension_Club.aspx">Hypertension 
+                    Club</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                 <asp:LinkButton ID="LinkButton5" runat="server" 
+                        CausesValidation="False" PostBackUrl="~/Club/Epilepsy.aspx">Epilepsy Club</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <asp:LinkButton ID="LinkButton6" runat="server" CausesValidation="False" 
+                        PostBackUrl="~/Club/Asthma.aspx">Asthma Club</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" 
+                        PostBackUrl="~/Club/Dental Club.aspx">Dental Club</asp:LinkButton></td>
+                        </tr>
+                    </table>
+                </asp:Panel>
+              
+               
+                <asp:Panel ID="next_activity_plan" runat="server" BackColor="Green" Font-Bold="True" 
+                    Height="29px">
+                    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblnews" runat="server" Font-Size="X-Large" ForeColor="White" 
+                        Text="News"></asp:Label>
+                    &nbsp;&nbsp;</asp:Panel>
+                <asp:Panel ID="marqueeofnextactivity" runat="server" Height="287px" 
+                    BorderStyle="Double" BackColor="White">
+                 <marquee align="LEFT" behavior="SCROLL" direction="UP" scrollamount="02"><font 
+                        size="04">
+                    * It Starting on 01/05/2013  <br />
+                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+      
+          </font></marquee></asp:Panel>
+               
+                <br />
+                &nbsp;
+                <br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                &nbsp;&nbsp;
+                <br />
+                <br />
+                <br />
+                <br />
+            </asp:Panel>
+            </td>
+        <td class="style2"><asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+          
+            <p>
+                &nbsp; &nbsp;</p>
+          
+        </asp:contentplaceholder>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="style3">
+        
+            <asp:Panel ID="Panel3" runat="server" Height="572px" Width="289px" 
+                BorderStyle="Double" BorderWidth="2px" ForeColor="Black">
+                <asp:Panel ID="loginlable_Panel4" runat="server" BackColor="Green" Font-Bold="True" 
+                    Height="29px" style="margin-top: 0px">
+                    <center><asp:Label ID="Label4" runat="server" Font-Size="X-Large" ForeColor="White" 
+                        Text="Login"></asp:Label></center>
+                </asp:Panel>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table style="width:100%;">
+                    <tr>
+                        <td class="style7" align="center">
+                            <asp:Label ID="lbluserid0" runat="server" Font-Bold="True" Text="User Type"></asp:Label>
+                        </td>
+                        <td align="center" class="style8">
+                            <asp:DropDownList ID="ddluser_type" runat="server" AutoPostBack="True" 
+                                Width="147px">
+                                <asp:ListItem Selected="True">User Type</asp:ListItem>
+                                <asp:ListItem>Member</asp:ListItem>
+                                <asp:ListItem>Provider Organisation</asp:ListItem>
+                                <asp:ListItem>Provider Individual</asp:ListItem>
+                                <asp:ListItem>Admin</asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style5" align="center">
+                            <asp:Label ID="lbluserid" runat="server" Font-Bold="True" Text="User id"></asp:Label>
+                        </td>
+                        <td align="center">
+                            <asp:TextBox ID="txtuserid" runat="server" Width="147px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style5" align="center">
+                            <asp:Label ID="lblpassword" runat="server" Font-Bold="True" Text="Password"></asp:Label>
+                        </td>
+                        <td align="center">
+                            <asp:TextBox ID="txtpassword" runat="server" TextMode="Password" Width="147px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style5" align="center">
+                            &nbsp;</td>
+                        <td align="center">
+                            <asp:Button ID="btnlogin" runat="server" BackColor="Green" 
+                                CausesValidation="False" ForeColor="White" style="height: 26px" Text="Login" 
+                                Width="73px" />
+                            <asp:LinkButton ID="LinkButton8" runat="server" ForeColor="Blue">Forget 
+                Password</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+                &nbsp;&nbsp; &nbsp;&nbsp;<table align="center" style="width: 100%;">
+                    <tr>
+                        <td align="center" class="style6">
+                            <center>
+                                <asp:Label ID="lblcreate_account" runat="server" BorderColor="Green" 
+                                    Font-Size="XX-Large" Text="Create Account"></asp:Label>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <center>
+                                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
+                                    Height="23px" Width="173px">
+                                    <asp:ListItem>Create Account</asp:ListItem>
+                                    <asp:ListItem>Member</asp:ListItem>
+                                    <asp:ListItem>Provider Organisation</asp:ListItem>
+                                    <asp:ListItem>Provider Individual</asp:ListItem>
+                                </asp:DropDownList>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+&nbsp;
+                <br />
+                <asp:Panel ID="News_panel_1" runat="server" BackColor="Green" Font-Bold="True" 
+                    Height="27px" Width="285px">
+                    <center>
+                        <asp:Label ID="lblfacility0" runat="server" Font-Size="X-Large" 
+                            ForeColor="White" Text="Next Activity Plan"></asp:Label>
+                    </center>
+                </asp:Panel>
+                <asp:Panel ID="News_panel_2" runat="server" Height="268px" 
+                    style="margin-top: 3px">
+                    <br />
+                    <marquee align="left" behavior="SCROLL" direction="UP" scrollamount="02"><font 
+                        size="04"> *Next Activity Declare 01/6/2013<br /> </font>
+                    </marquee></asp:Panel>
+                <br />
+                <br />
+                <br />
+                &nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                <br />
+                &nbsp;&nbsp;
+                <br />
+                <br />
+                <br />
+            </asp:Panel>
+            </td>
+        </tr>
+        </table>
+    </div>
+        <asp:Panel ID="Panel5" runat="server" BackColor="Green" Width="1321px">
+            <br /><center>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Large" 
+                ForeColor="White">About us</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Large" 
+                ForeColor="White">Career</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Large" 
+                ForeColor="White">Contact
+            </asp:HyperLink>
+            </center>
+            <br />
+        </asp:Panel>
+        
+    </form>
+   
+</body>
+</html>

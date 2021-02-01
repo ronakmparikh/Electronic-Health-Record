@@ -1,0 +1,5 @@
+﻿
+Partial Class Doctor_perViste_Charge_Crystal
+    Inherits System.Web.UI.Page
+
+End Class
